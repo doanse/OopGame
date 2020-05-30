@@ -9,7 +9,7 @@ namespace OopGame.Factories
 {
     class HardFactory : ICarFactory
     {
-        Car[] ICarFactory.Create()
+        ICar<IEngine>[] ICarFactory.Create()
         {
             Audi audi = new Audi()
             {
@@ -17,7 +17,6 @@ namespace OopGame.Factories
                 CruiseControl = "s",
                 Esp = "s",
                 Speed = 11,
-                Engine = new V1() { Cost = 1000, Power = 500, Volume = 4 },
                 FuelTank = new FT1() { FuelVolume = 10, Volume = 10 }
             };
             BMW bmw = new BMW()
@@ -26,10 +25,9 @@ namespace OopGame.Factories
                 CruiseControl = "s",
                 Esp = "s",
                 Speed = 11,
-                Engine = new V1() { Cost = 1300, Power = 550, Volume = 4 },
                 FuelTank = new FT1() { FuelVolume = 10, Volume = 10 }
             };
-            Car[] cars = new Car[]
+            ICar<IEngine>[] cars = new ICar<IEngine>[]
             {
                 audi,
                 bmw

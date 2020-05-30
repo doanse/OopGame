@@ -9,11 +9,11 @@ namespace OopGame
     class Track
     {
         private int length;
-        private Car[] cars;
+        private ICar<IEngine>[] cars;
         private List<Viewer> viewers;
         private Woman woman;
 
-        public Track(Car[] cars, int length, List<Viewer> viewers, Woman woman)
+        public Track(ICar<IEngine>[] cars, int length, List<Viewer> viewers, Woman woman)
         {
             this.cars = cars;
             this.length = length;
@@ -39,7 +39,7 @@ namespace OopGame
         {
             foreach (var car in cars)
             {
-                car.Engine.Work();
+                car.GetEngine().Work();
             }
         }
     }

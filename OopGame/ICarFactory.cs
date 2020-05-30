@@ -6,6 +6,6 @@ namespace OopGame
 {
     interface ICarFactory
     {
-        Car<IEngine>[] Create();
+        ICar<IEngine>[] Create();
     }
 }
