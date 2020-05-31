@@ -8,12 +8,13 @@ namespace OopGame.Cars
 {
     class Audi : ICar<V1>
     {
+        private IFuelTank _fuelTank;
+
+        private int _speed;
         public string Abs { get; set; }
         public string Esp { get; set; }
         public string CruiseControl { get; set; }
-
-        private IFuelTank _fuelTank;
-        private int _speed;
+       
         public IFuelTank FuelTank { get => _fuelTank; set => _fuelTank = value; }
         public int Speed { get => _speed; set => _speed = value; }
 

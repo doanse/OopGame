@@ -8,9 +8,11 @@ namespace OopGame.Cars
 {
     class KiA : ICar<V5>
     {
-        public string Abs { get; set; }
         private IFuelTank _fuelTank;
+
         private int _speed;
+        public string Abs { get; set; }
+       
         public IFuelTank FuelTank { get => _fuelTank; set => _fuelTank = value; }
         public int Speed { get => _speed; set => _speed = value; }
 
