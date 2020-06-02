@@ -16,16 +16,16 @@ namespace OopGame.Factories
                 Abs = "1",
                 CruiseControl = "s",
                 Esp = "s",
-                Speed = 11,
-                FuelTank = new FT1() { FuelVolume = 10, Volume = 10 }
+                Speed = 200,
+                FuelTank = new FT3()
             };
             BMW bmw = new BMW()
             {
                 Abs = "1",
                 CruiseControl = "s",
                 Esp = "s",
-                Speed = 11,
-                FuelTank = new FT1() { FuelVolume = 10, Volume = 10 }
+                Speed = 250,
+                FuelTank = new FT3()
             };
             ICar<IEngine>[] cars = new ICar<IEngine>[]
             {
@@ -33,6 +33,10 @@ namespace OopGame.Factories
                 bmw
             };
             return cars;
+        }
+        public override string ToString()
+        {
+            return "Сложно";
         }
     }
 }

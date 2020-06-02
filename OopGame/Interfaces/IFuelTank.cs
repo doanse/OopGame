@@ -6,8 +6,6 @@ namespace OopGame
 {
     interface IFuelTank
     {
-        int Volume { get; set; }
-        int FuelVolume { get; set; }
-        public void Combustion();
+        public int GetVolume();
     }
 }

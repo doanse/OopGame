@@ -10,24 +10,8 @@ namespace OopGame.Engines
     {
         public int Cost { get; set; }
         public int Volume { get; set; }
-        public int Power { get; set; }       
-
-        public async Task<string> Work()
-        {
-            try
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    await Task.Delay(1000);
-                    Console.WriteLine(this.ToString());
-                }
-                return "ok";
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
+        public int Power { get; set; }
+        public bool? IsActive { get; set; }
 
         public override string ToString()
         {

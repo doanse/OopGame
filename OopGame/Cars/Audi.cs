@@ -1,27 +1,24 @@
 ﻿using OopGame.Engines;
-using OopGame.FuelTanks;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OopGame.Cars
 {
     class Audi : ICar<V1>
     {
         private IFuelTank _fuelTank;
-
         private int _speed;
+        private V1 _engine;
         public string Abs { get; set; }
         public string Esp { get; set; }
-        public string CruiseControl { get; set; }
-       
+        public string CruiseControl { get; set; }       
         public IFuelTank FuelTank { get => _fuelTank; set => _fuelTank = value; }
         public int Speed { get => _speed; set => _speed = value; }
+        public V1 Engine => _engine = new V1() { Cost = 1000, Power = 500, Volume = 4 };
 
-        public V1 GetEngine()
+        public V1 GetCurrentEngine()
         {
-            return new V1() { Cost = 1000, Power = 500, Volume = 4 };
-        }
+            return this._engine;
+        }       
 
         public void Shine()
         {

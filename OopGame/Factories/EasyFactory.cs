@@ -14,14 +14,14 @@ namespace OopGame.Factories
             Ford ford = new Ford()
             {
                 Abs = "1",
-                Speed = 11,
-                FuelTank = new FT2() { FuelVolume = 30, Volume = 30 }
+                Speed = 100,
+                FuelTank = new FT2()                
             };
             KiA kia = new KiA()
             {
                 Abs = "1",
-                Speed = 11,
-                FuelTank = new FT2() { FuelVolume = 30, Volume = 30 }
+                Speed = 110,
+                FuelTank = new FT1()
             };
 
             ICar<IEngine>[] cars = new ICar<IEngine>[]
@@ -30,6 +30,10 @@ namespace OopGame.Factories
                 kia
             };
             return cars;
+        }
+        public override string ToString()
+        {
+            return "Легко";
         }
     }
 }

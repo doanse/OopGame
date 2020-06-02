@@ -4,11 +4,11 @@ using System.Text;
 
 namespace OopGame.FuelTanks
 {
-    class FT1 : IFuelTank
-    {    
+    class FT3 : IFuelTank
+    {
         public int GetVolume()
         {
-            return 20;
+            return 40;
         }
     }
 }

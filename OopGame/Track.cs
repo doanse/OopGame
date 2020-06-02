@@ -39,7 +39,8 @@ namespace OopGame
         {
             foreach (var car in cars)
             {
-                car.GetEngine().Work();
+                car.Engine.Work(car.FuelTank.GetVolume());
+                car.Move();
             }
         }
     }
