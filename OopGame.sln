@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopGame", "OopGame\OopGame.csproj", "{F6995FC9-6000-4CCD-B3D4-CCEFD4733CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopGame", "OopGame\OopGame.csproj", "{F6995FC9-6000-4CCD-B3D4-CCEFD4733CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragRacingGameLib", "DragRacingGameLib\DragRacingGameLib.csproj", "{5FC00F66-BED4-483B-B243-1BAF21A4C5D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragRacingGameLibTest", "DragRacingGameLibTest\DragRacingGameLibTest.csproj", "{A532B5F4-2D4A-4D98-91D0-DE118EACEC88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F6995FC9-6000-4CCD-B3D4-CCEFD4733CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6995FC9-6000-4CCD-B3D4-CCEFD4733CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6995FC9-6000-4CCD-B3D4-CCEFD4733CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC00F66-BED4-483B-B243-1BAF21A4C5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC00F66-BED4-483B-B243-1BAF21A4C5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC00F66-BED4-483B-B243-1BAF21A4C5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC00F66-BED4-483B-B243-1BAF21A4C5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A532B5F4-2D4A-4D98-91D0-DE118EACEC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A532B5F4-2D4A-4D98-91D0-DE118EACEC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A532B5F4-2D4A-4D98-91D0-DE118EACEC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A532B5F4-2D4A-4D98-91D0-DE118EACEC88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

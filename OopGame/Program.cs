@@ -1,10 +1,7 @@
-﻿using OopGame.Cars;
-using OopGame.Engines;
-using OopGame.Factories;
-using OopGame.FuelTanks;
+﻿using DragRacingGameLib;
+using DragRacingGameLib.Factories;
 using System;
 using System.Collections.Generic;
-
 namespace OopGame
 {
     class Program
@@ -36,7 +33,7 @@ namespace OopGame
             if (selectedLevel > -1 && selectedLevel < levels.Count)
             {
                 ICarFactory carFactory = levels[selectedLevel];
-                Game game = new Game(carFactory);
+                Game game = new Game(carFactory, Writer.Write);
                 game.Start();
             }
             else
